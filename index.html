@@ -4,9 +4,10 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
     crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
   <meta charset="utf-8">
   <title>Tuner</title>
   <script src="script.js"></script>
@@ -14,98 +15,66 @@
 </head>
 
 <body>
-  <div class="w3-container">
-    <div class="w3-card-4">
 
-      <header class="w3-container w3-black w3-section">
-        <h3>Bass</h3>
-      </header>
+  <h1>Graves501's Github Page </h1>
+  <section class="icon-list" style="padding-top: 10px; padding-bottom: 10px;">
+    <!-- Copyright Nintendo -->
+    <i class="nes-mario"></i>
+    <i class="nes-ash"></i>
+    <i class="nes-pokeball"></i>
+    <i class="nes-bulbasaur"></i>
+    <i class="nes-charmander"></i>
+    <i class="nes-squirtle"></i>
+    <i class="nes-kirby"></i>
+  </section>
 
-      <div class="w3-container">
-        <div class="w3-container w3-cell w3-mobile">
-          <button class="w3-button w3-black w3-round-large" onclick="playSound('E1')">E1</button>
-          <button class="w3-button w3-black w3-round-large" onclick="playSound('A1')">A1</button>
-          <button class="w3-button w3-black w3-round-large" onclick="playSound('D2')">D2</button>
-          <button class="w3-button w3-black w3-round-large" onclick="playSound('G2')">G2</button>
-        </div>
-      </div>
+  <div class="nes-container with-title" style="margin-bottom: 20px;">
+    <p class="title nes-text is-primary">Bass</p>
+    <button type="button" class="nes-btn" onclick="playSound('E1')">E1</button>
+    <button type="button" class="nes-btn" onclick="playSound('A1')">A1</button>
+    <button type="button" class="nes-btn" onclick="playSound('D2')">D2</button>
+    <button type="button" class="nes-btn" onclick="playSound('G2')">G2</button>
 
-      <footer class="w3-container w3-black w3-section">
-        <h5>Press Keys 1234</h5>
-      </footer>
-    </div>
+    <p class="nes-text" style="margin-top: 10px;">Press 1234</p>
+  </div>
 
+  <div class="nes-container with-title" style="margin-bottom: 20px;">
+    <p class="title nes-text is-success">Guitar</p>
+    <button type="button" class="nes-btn" onclick="playSound('E2')">E2</button>
+    <button type="button" class="nes-btn" onclick="playSound('A2')">A2</button>
+    <button type="button" class="nes-btn" onclick="playSound('D3')">D3</button>
+    <button type="button" class="nes-btn" onclick="playSound('G3')">G3</button>
+    <button type="button" class="nes-btn" onclick="playSound('B3')">B3</button>
+    <button type="button" class="nes-btn" onclick="playSound('E4')">E4</button>
 
-    <div class="w3-card-4">
+    <p class="nes-text" style="margin-top: 10px;">Press QWERTY</p>
+  </div>
 
-      <header class="w3-container w3-black w3-section">
-        <h3>Guitar</h3>
-      </header>
+  <div class="nes-container with-title" style="margin-bottom: 20px;">
+    <p class="title nes-text is-error">Ukulele</p>
+    <button type="button" class="nes-btn" onclick="playSound('G4')">G4</button>
+    <button type="button" class="nes-btn" onclick="playSound('C4')">C4</button>
+    <button type="button" class="nes-btn" onclick="playSound('E4')">E4</button>
+    <button type="button" class="nes-btn" onclick="playSound('A4')">A4</button>
 
-      <div class="w3-container">
-        <div class="w3-container w3-cell w3-mobile">
-          <button class="w3-button w3-black w3-round-large" onclick="playSound('E2')">E2</button>
-          <button class="w3-button w3-black w3-round-large" onclick="playSound('A2')">A2</button>
-          <button class="w3-button w3-black w3-round-large" onclick="playSound('D3')">D3</button>
-          <button class="w3-button w3-black w3-round-large" onclick="playSound('G3')">G3</button>
-          <button class="w3-button w3-black w3-round-large" onclick="playSound('B3')">B3</button>
-          <button class="w3-button w3-black w3-round-large" onclick="playSound('E4')">E4</button>
-        </div>
-      </div>
+    <p class="nes-text" style="margin-top: 10px;">Press ASDF</p>
+  </div>
 
-      <footer class="w3-container w3-black w3-section">
-        <h5>Press Keys QWERTY</h5>
-      </footer>
+  <div class="nes-container with-title" style="margin-bottom: 20px;">
+    <p class="title nes-text">Tap Metronome</p>
+    <button type="button" class="nes-btn" onclick="getTempo()">Tap</button>
+    <button type="button" class="nes-btn" onclick="playTick()">Play/Pause</button>
+    <button type="button" class="nes-btn" onclick="resetTempo()">Reset</button>
 
-    </div>
+    <p class="nes-text" style="margin-top: 10px;">Beats per minute: <span id="bpmText">120</span></p>
 
-    <div class="w3-card-4">
+  </div>
 
-      <header class="w3-container w3-black w3-section">
-        <h3>Ukulele</h3>
-      </header>
+  <div class="nes-container with-title" style="margin-bottom: 20px;">
+    <p class="title">Time until TOOL Concert in Berlin:</p>
+    <p id="tool_counter" class="nes-text is-primary"></p>
+  </div>
 
-      <div class="w3-container">
-        <div class="w3-container w3-cell w3-mobile">
-          <button class="w3-button w3-black w3-round-large" onclick="playSound('G4')">G4</button>
-          <button class="w3-button w3-black w3-round-large" onclick="playSound('C4')">C4</button>
-          <button class="w3-button w3-black w3-round-large" onclick="playSound('E4')">E4</button>
-          <button class="w3-button w3-black w3-round-large" onclick="playSound('A4')">A4</button>
-        </div>
-      </div>
-      <footer class="w3-container w3-black w3-section">
-        <h5>Press Keys ASDF</h5>
-      </footer>
-
-    </div>
-    <div class="w3-card-4">
-
-      <header class="w3-container w3-black w3-section">
-        <h3>Tap Metronome</h3>
-      </header>
-    
-      <div class="w3-container">
-        <button class="w3-button w3-black w3-round-large" onclick="getTempo()">
-          <i class="fa fa-hand-o-up" aria-hidden="true"> Tap </i>
-        </button>
-        <button class="w3-button w3-black w3-round-large" onclick="playTick()">
-          <i class="fa fa-play" aria-hidden="true"></i>
-          <i class="fa fa-pause" aria-hidden="true"></i>
-        </button>
-        <button class="w3-button w3-black w3-round-large" onclick="resetTempo()">
-          <i class="fa fa-stop" aria-hidden="true"> Reset </i>
-        </button>
-      </div>
-
-      <footer class="w3-container w3-black w3-section">
-        <h5>Beats per minute: <span id="bpmText">120</span>
-        </h5>
-      </footer>
-    </div>
-
-    <div class="w3-container w3-center">
-      Time until TOOL Concert:<p id="tool_counter"></p>
-    </div>
 </body>
 
 </html>
