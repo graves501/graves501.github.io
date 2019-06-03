@@ -28,7 +28,9 @@ function searchKeyPress(keyPressEvent) {
   keyPressEvent = keyPressEvent || window.event;
 
   switch (keyPressEvent.keyCode) {
+
     // Row 1234
+
     case 49:
       playSound("E1");
       break;
@@ -87,6 +89,24 @@ function searchKeyPress(keyPressEvent) {
 
     case 70:
       playSound("A4");
+      break;
+
+    // Row ZXCV
+
+    case 90:
+      playSound("violin/G3");
+      break;
+
+    case 88:
+      playSound("violin/D4");
+      break;
+
+    case 67:
+      playSound("violin/A4");
+      break;
+
+    case 86:
+      playSound("violin/E5");
       break;
 
     default:
