@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Jun 2, 2019 20:00:00").getTime();
+var countDownDate = new Date("Jul 6, 2019 19:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -17,12 +17,12 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Output the result in an element with id="demo"
-  document.getElementById("tool_counter").innerHTML = days + "d " + hours + "h "
+  document.getElementById("counter").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
 
   // If the count down is over, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("tool_counter").innerHTML = "TOOL was awesome!";
+    document.getElementById("counter").innerHTML = "Munich was awesome!";
   }
 }, 1000);
