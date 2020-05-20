@@ -1,0 +1,13 @@
+[
+    
+        
+            {
+                "ref": "https://graves501.github.io/post/first-post/",
+                "title": "First Blog Post",
+                "section": "post",
+                "date" : "2020.05.20",
+                "body": "First post! So I had a look at static site generators like Jekyll, but since Hugo is built on Go, I settled for Hugo.\nAt first I had some troubles with settling for a theme, because there are quite a few out there.\nHarbor looked really nice, but I had to fix the example config.toml file first before really using it.\nAnyways check out my instrument tuner which I wrote a while ago.\n"
+            }
+        
+    
+]

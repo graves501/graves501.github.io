@@ -11,5 +11,16 @@
     	
 		<atom:link href="https://graves501.github.io/categories/" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>First Blog Post</title>
+			<link>https://graves501.github.io/post/first-post/</link>
+			<pubDate>Wed, 20 May 2020 19:23:02 +0200</pubDate>
+			<guid>https://graves501.github.io/post/first-post/</guid>
+			<description>First post! So I had a look at static site generators like Jekyll, but since Hugo is built on Go, I settled for Hugo.
+At first I had some troubles with settling for a theme, because there are quite a few out there.
+Harbor looked really nice, but I had to fix the example config.toml file first before really using it.
+Anyways check out my instrument tuner which I wrote a while ago.</description>
+		</item>
+      	
 	</channel>
 </rss>
