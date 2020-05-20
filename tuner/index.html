@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+  <meta charset="utf-8">
+  <title>graves501's github page</title>
+  <script src="script.js"></script>
+  <script src="countdown.js"></script>
+</head>
+
+<body>
+  <h1>GRAVES501'S GITHUB PAGE</h1>
+
+  <section class="icon-list" style="padding-top: 10px; padding-bottom: 10px; display: flex;">
+    <!-- Copyright Nintendo -->
+    <i class="nes-charmander"></i>
+    <i class="nes-squirtle"></i>
+    <i class="nes-bulbasaur"></i>
+  </section>
+
+  <div class="nes-container with-title" style="margin-bottom: 20px;">
+    <p class="title nes-text is-primary">Bass</p>
+    <button type="button" class="nes-btn" onclick="playSound('E1')">E1</button>
+    <button type="button" class="nes-btn" onclick="playSound('A1')">A1</button>
+    <button type="button" class="nes-btn" onclick="playSound('D2')">D2</button>
+    <button type="button" class="nes-btn" onclick="playSound('G2')">G2</button>
+  </div>
+
+  <div class="nes-container with-title" style="margin-bottom: 20px;">
+    <p class="title nes-text is-success">Guitar</p>
+    <button type="button" class="nes-btn" onclick="playSound('E2')">E2</button>
+    <button type="button" class="nes-btn" onclick="playSound('A2')">A2</button>
+    <button type="button" class="nes-btn" onclick="playSound('D3')">D3</button>
+    <button type="button" class="nes-btn" onclick="playSound('G3')">G3</button>
+    <button type="button" class="nes-btn" onclick="playSound('B3')">B3</button>
+    <button type="button" class="nes-btn" onclick="playSound('E4')">E4</button>
+  </div>
+
+  <div class="nes-container with-title" style="margin-bottom: 20px;">
+    <p class="title nes-text is-error">Ukulele</p>
+    <button type="button" class="nes-btn" onclick="playSound('G4')">G4</button>
+    <button type="button" class="nes-btn" onclick="playSound('C4')">C4</button>
+    <button type="button" class="nes-btn" onclick="playSound('E4')">E4</button>
+    <button type="button" class="nes-btn" onclick="playSound('A4')">A4</button>
+  </div>
+
+  <div class="nes-container with-title" style="margin-bottom: 20px;">
+    <p class="title nes-text is-warning">Baritone Ukulele</p>
+    <button type="button" class="nes-btn" onclick="playSound('D3')">D3</button>
+    <button type="button" class="nes-btn" onclick="playSound('G3')">G3</button>
+    <button type="button" class="nes-btn" onclick="playSound('B3')">B3</button>
+    <button type="button" class="nes-btn" onclick="playSound('E4')">E4</button>
+  </div>
+
+  <div class="nes-container with-title" style="margin-bottom: 20px;">
+    <p class="title nes-text is-error" style="color: purple;">Violin</p>
+    <button type="button" class="nes-btn" onclick="playSound('violin/G3')">G3</button>
+    <button type="button" class="nes-btn" onclick="playSound('violin/D4')">D4</button>
+    <button type="button" class="nes-btn" onclick="playSound('violin/A4')">A4</button>
+    <button type="button" class="nes-btn" onclick="playSound('violin/E5')">E5</button>
+  </div>
+
+  <div class="nes-container with-title" style="margin-bottom: 20px;">
+    <p class="title nes-text">Tap Metronome</p>
+    <button type="button" class="nes-btn" onclick="getTempo()">Tap</button>
+    <button type="button" class="nes-btn" onclick="playTick()">Play/Pause</button>
+    <button type="button" class="nes-btn" onclick="resetTempo()">Reset</button>
+
+    <p class="nes-text" style="margin-top: 10px;">Beats per minute: <span id="bpmText">120</span></p>
+
+  </div>
+
+  <div class="nes-container with-title" style="margin-bottom: 20px;">
+    <p class="title">Time until <i class="nes-icon is-small heart"></i>:</p>
+    <p id="counter" class="nes-text is-primary"></p>
+  </div>
+
+</body>
+
+</html>

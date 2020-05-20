@@ -1,0 +1,15 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Tags on graves501.github.io</title>
+		<link>https://graves501.github.io/tags/</link>
+		<description>Recent content in Tags on graves501.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		
+  		<language>en</language>
+		
+		<managingEditor>Page(/tags) (graves501)</managingEditor>
+    	
+		<atom:link href="https://graves501.github.io/tags/" rel="self" type="application/rss+xml" />
+		
+	</channel>
+</rss>
